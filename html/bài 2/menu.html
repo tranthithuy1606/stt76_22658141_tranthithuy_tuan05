@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="./css/bootstrap.css"></script>
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        .btn-custom {
+          border-radius: 50px; /* Bo góc nút */
+          padding: 0.5rem 1.5rem; /* Thêm khoảng cách */
+        }
+    
+        .btn-custom.active {
+          background-color: #212529;
+          color: white;
+        }
+      </style>
+</head>
+<body>
+    <div class="container" style="background-color: black;">
+        <div class="row">
+          <nav class="navbar navbar-expand-sm navbar-dark"  style="background-color: black;">
+            <div class="container-fluid">
+              <a class="navbar-brand me-5 ms-5" style="font-family: woff; font-style: italic;" href="home.html">Feane</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav me-5 ms-5">
+                  <li class="nav-item me-5">
+                    <a class="nav-link" href="./home.html">HOME</a>
+                  </li>
+                  <li class="nav-item me-5">
+                    <a class="nav-link" href="./menu.html">MENU</a>
+                  </li>
+                  <li class="nav-item me-5">
+                    <a class="nav-link" href="./about.html">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./book.html">BOOK TABLE</a>
+                  </li>
+                  <li class="ms-5 ms-5">
+                  <i class="material-icons m-1" style="color: white;">person</i>
+                  <i class="material-icons m-1" style="color: white;">shopping_cart</i>
+                  <ia class="material-icons m-1" style="color: white;">search</ia>
+                </li>
+                </ul>
+
+                <form class="d-flex">
+                    <div id="noidung">
+                <button type="button" class="btn btn-warning rounded-pill" data-bs-toggle="modal" data-bs-target="#myModal">
+                    ORDER NOW!
+                  </button>
+                </div>
+                  <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                  
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title text-warning">Order</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                  
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                         
+                           <!-- Modal -->
+                              <form>
+                        <div class="mb-3">
+                          <label for="phone" class="form-label">Telephone</label>
+                          <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="mb-3">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-check mb-3">
+                          <input type="checkbox" class="form-check-input" id="checkmeout">
+                          <label class="form-check-label" for="checkmeout">Check me out</label>
+                        </div>
+                      </form>
+                        </div>
+                  
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-warning" data-bs-dismiss="modal">Order</button>
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </form>
+              </div>
+              
+            </div>
+          </nav>
+        </div>
+        <div class="row bg-light">
+            <div class="row  d-flex justify-content-center align-items-center vh-10">
+                <div class="text-center mt-4" style="font-family: ff; font-style: italic;">
+                    <h2>Our Menu</h2>
+                </div>
+                <div class="row">
+                    <div class="container text-center mt-5">
+                        <div class="btn-group" role="group">
+                          <button type="button" class="btn btn-custom active">All</button>
+                          <button type="button" class="btn btn-custom">Burger</button>
+                          <button type="button" class="btn btn-custom">Pizza</button>
+                          <button type="button" class="btn btn-custom">Pasta</button>
+                          <button type="button" class="btn btn-custom">Fries</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="row m-3 d-flex justify-content-center align-items-center vh-10">
+                <div class="col-4">
+                    <div class="card" style="width:300px; height: 200px;">
+                        <img class="card-img-top p-5" src="./images/f1.png" alt="Card image" style="width:100%; height: 300px; background-color: rgba(228, 226, 226, 0.897);border-bottom-left-radius: 40px;">
+                        <div class="card-body bg-dark text-light">
+                          <h4 class="card-title">Delicious Pizza</h4>
+                          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                          $17  <i class="material-icons m-1 btn btn-warning rounded-circle" style="color: white;">shopping_cart</i>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4 mt-3">
+                    <div class="card " style="width:300px; height: 220px;">
+                        <img class="card-img-top p-5" src="./images/f2.png" alt="Card image" style="width:100%; height: 300px; background-color: rgba(228, 226, 226, 0.897);border-bottom-left-radius: 40px;">
+                        <div class="card-body bg-dark text-light">
+                          <h4 class="card-title ">Delicious Burger</h4>
+                          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                          $17  <i class="material-icons m-1 btn btn-warning rounded-circle" style="color: white;">shopping_cart</i>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card " style="width:300px; height: 200px;">
+                        <img class="card-img-top p-5" src="./images/f3.png" alt="Card image" style="width:100%; height: 300px; background-color: rgba(228, 226, 226, 0.897);border-bottom-left-radius: 40px;">
+                        <div class="card-body bg-dark text-light">
+                          <h4 class="card-title">Delicous Pizza</h4>
+                          <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                          $17   <i class="material-icons m-1 btn btn-warning rounded-circle" style="color: white;">shopping_cart</i>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+       
+
+    </div>
+</body>
+</html>
